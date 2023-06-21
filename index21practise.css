@@ -1,0 +1,67 @@
+
+body{
+
+    font-family: 'Kablammo', cursive;
+    /* text-align: center; */
+
+}
+
+html{
+
+    font-size: 20px;
+}
+/*dotları ve altçizgileri kaldırmalısın*/
+
+nav.horizantal_menu ul li a{
+    text-decoration: none;
+     color: blueviolet;
+}
+
+nav.horizantal_menu ul {
+    list-style: none;
+    text-align: center;
+}
+
+/*
+nav.horizantal_menu ul li a{
+      list-style: none;
+    text-decoration: none;
+}
+*/
+
+nav.horizantal_menu ul li{
+    display: inline-block;
+    background-color: wheat;
+    padding: 1rem 2rem;
+    margin: 2rem;
+    width: auto;
+    height: auto;
+    border-radius: 20px;
+}
+
+/*uzerine geldiğimizde yazı renki değişsin gibi*/
+nav.horizantal_menu ul li:hover{
+    background-color: aqua;
+    color: white;
+    cursor: pointer;
+}
+
+/*
+nav ul li a:hover{
+    color: black;
+}
+*/
+
+/*li nin içindeki a nın hoverı*/
+nav.horizantal_menu ul li:hover a{
+    color: red;
+}
+
+nav.openable_menu ul{
+    display: none;
+}
+
+nav.openable_menu:hover ul{
+    display: block;
+    color: rgb(0, 151, 211);
+} 

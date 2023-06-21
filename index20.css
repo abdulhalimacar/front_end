@@ -1,0 +1,49 @@
+/*COMBINATORS*/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*descendent selector*/
+
+/*kutunun içerisindeki tüm p'leri seç
+.kutu p{
+    color: red;
+}
+*/
+
+/*atası kutu clası olan p'leri boyuyoruz*/
+/*child selector*/ 
+/*
+.kutu > p{
+    color: rgb(232, 66, 5);
+}
+*/
+
+/* div+a div elementi kapandıktan sonraki ilk a'yı seç(tek bir a'yı seçer)*/ 
+
+/*
+h1+p{
+    background-color: green;
+    color: red;
+}
+*/
+
+/*h1 elementinden sonraki tüm p elementlerini seç*/
+
+/* h1 ~ p{
+    color:aqua;
+} */
+
+
+h3{
+    margin: 2rem;
+    width: 5rem;
+    height: 5rem;
+    border: 1px solid red;
+    outline: 3px solid purple;
+    outline-offset: 1rem;
+    border-radius: 50%;
+}

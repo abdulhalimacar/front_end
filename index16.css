@@ -1,0 +1,36 @@
+.float{
+    /*
+    width: 200px;
+    height: 200px;*/
+    width: 40%;
+    height: 20%;
+    float: left;
+    margin-right: 10px;
+    margin-left: 20px;
+}
+
+.float2{
+    background-color: aquamarine;
+    text-align: justify;
+}
+
+.clear{
+    /*yazıyı aşağı atar*/
+    clear: both;
+}
+
+.box1{
+    background-color: coral;
+    float: left;
+    font-size: 2rem;
+}
+.box2{
+    background-color: skyblue;
+    float: left;
+    font-size: 1.5rem;
+}
+.box3{
+    background-color: blueviolet;
+    float: left;
+    font-size: 2rem;
+}

@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+}
+
+html{
+    /*font-size: 16px; default olarak bu 16px dir ama biz bunu değiştirebiliriz. not:1rem 16px dir default olarak*/
+}
+body{
+    height: 100vh;
+    /*parent bu. eğer bu olmasaydı aşağıdaki heightların bir manası olmazdı*/
+}
+.abs{
+    background-color: aqua;
+    width: 10cm;
+
+}
+
+.div2{
+    background-color: coral;
+    width: 50%;
+    height: 50%;
+
+}
+
+.div3{
+    background-color: yellowgreen;
+    width: 50%;
+    height: 50vh;
+}
+
+.div4{
+    background-color: purple;
+    width: 50vw;
+}
+
+.div5{
+    font-size: 1em;
+
+}
+
+.div6{ 
+  
+    font-size: 2em; 
+}
+
+.div7{
+    font-size: 3em;
+}
+.div8{
+    font-size: 3em;
+}
+.div9{
+    font-size: 3em;
+}
+.div10{
+    font-size: 3em;
+}
+
+
+
+

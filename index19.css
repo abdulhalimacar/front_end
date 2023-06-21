@@ -1,0 +1,43 @@
+.container{
+    border: 4px solid red;
+    width: 20rem;
+    height: 20rem;
+    background-image: url(./ed.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: auto;
+    color: yellow;
+   /* opacity: 0.789;*/
+   color: rgba(227, 0, 0, 0.9);
+}
+
+img{
+    width: 100px;
+    height: 100px;
+}
+
+#i1{
+    opacity: 0.3;
+}
+#i1:hover{
+    opacity: 1;
+}
+#i2{
+    opacity: 0.3;
+}
+#i2:hover{
+    opacity: 1;
+}
+#i3{
+    opacity: 0.3;
+}
+#i3:hover{
+    opacity: 1;
+}
+#i4{
+    opacity: 0.3;
+}
+#i4:hover{
+    opacity: 1;
+}

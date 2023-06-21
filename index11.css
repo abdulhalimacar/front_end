@@ -1,0 +1,64 @@
+body{
+    background-color: orange;
+}
+
+h1{
+    text-align: center;
+    text-decoration: underline;
+}
+#par1{
+    color: blue;
+    text-align: center;
+    text-transform: capitalize;
+    font-family: font-family: 'Kablammo', cursive;
+
+}
+#par2{
+
+    text-align: right;
+    color: rgb(255,0 ,0,1);
+    text-decoration: overline;
+    text-transform: lowercase;
+
+}
+#par3{
+
+    color: #85f466;
+    text-align: justify;
+    text-decoration: line-through;
+    letter-spacing: 10px;
+    line-height: 1cm;
+    column-rule: 3px solid blue;
+
+
+}
+#par4{
+
+    color: hsl(240, 100%, 50%);
+    text-decoration: solid;
+    text-indent: 2rem;
+    direction: rtl;
+    unicode-bidi: bidi-override;
+    text-shadow: 2px 2px 2px red;
+    column-count: 3;
+
+
+}
+#par5{
+
+    text-decoration: double;
+    color: fuchsia;
+    text-transform: uppercase;
+
+}
+#par6::first-line{
+    font-size: 2rem;
+    text-decoration: line-through red 5px;
+
+}
+
+#a{
+    text-decoration: overline;
+}
+
+

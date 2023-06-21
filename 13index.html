@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="13index.css">
+    <title>lists</title>
+    <style>
+
+        ul{
+            /*padding: 5px;*/
+        }
+        .item{
+            /*list-style-type: georgian;*/
+            /*list-style-position: inside;*/
+            /*list-style-type: "\1F44F";*/
+            list-style-image:url("ed.jpg");
+            list-style-position: inside;
+
+        }
+
+        li::before{
+            /*herbir liden önce*/
+        
+            /*content: "\1F44F";*/
+        }
+
+        ol{
+            list-style-type:none;
+            margin: 5px;
+            padding: 5px;
+        }
+
+        ol li{
+
+            border: 1px solid red;
+            border-radius: 25px;
+            margin: 10px;
+            padding-left: 1rem;
+            background-color: green;
+        }
+
+        ol li:hover{
+            background-color: gray;
+            color: black;
+        }
+
+    </style>
+</head>
+<body>
+
+    <ul>
+        <li class="item item1">item1</li>
+        <li class="item item2">item2</li>
+        <li class="item item3">item3</li>
+        <li class="item item4">item4</li>
+        <li class="item item5">item5</li>
+    </ul>
+
+    <ol>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, praesentium!</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, praesentium!</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, praesentium!</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, praesentium!</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, praesentium!</li>
+    </ol>
+
+
+</body>
+</html>

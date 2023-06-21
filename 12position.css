@@ -1,0 +1,68 @@
+.main{
+    width: 100%;
+   background-color: aqua;
+    height: 1000px;
+    margin-top: 50px;
+    padding: 5px;
+    /*position: relative;*/
+    /*if we use position in this way the base will be the main. it takes position based on main. if we did not use position in main the reference will be the white area which is body*/
+
+
+}
+
+.box1{
+    width: 95%;
+    background-color: red;
+    height: 100px;
+    margin: auto;
+    position: fixed;
+    top: 0;
+    
+    top: 0;
+    left: 0px;
+}
+
+.box2{
+    width: 100%;
+    background-color: blue;
+    height: 100px;
+    /*position:relative;*/
+    /*top: 20px;
+    left: 30px;*/
+    /*if we did not use position as relative we would not be able to use top and left buttons*/
+}
+
+.box3{
+    width: 100%;
+    background-color: orange;
+    height: 100px;
+   /* position: absolute;*/
+    top: 20px;
+    left: 10px;
+   
+}
+
+#inside{
+
+    width: 30px;
+    height: 30px;
+    background-color: green;
+    color: yellow;
+    font-size: .5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.new{
+
+    background-color: red;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 10;
+    height: 10 ;
+    margin: auto;
+    text-align: center;
+
+}
