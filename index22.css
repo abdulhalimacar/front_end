@@ -1,0 +1,113 @@
+.write{
+
+    text-align: center;
+    font-size: 2rem;
+    margin: 2rem auto;
+    width: 50vw;
+}
+
+.write1{
+
+    background-color: aqua;
+    transform: rotateX(90deg);
+}
+
+.write2{
+
+    background-color: green;
+}
+
+.write3{
+
+    background-color: coral;
+    transform: rotate(45deg);
+}
+
+.write4{
+
+    background-color: purple;
+    /* transform: scaleX(2); */
+
+}
+.write4:hover{
+
+    transform: scaleX(2) scaleY(1.0005);
+}
+
+.write5{
+
+    background-color: violet;
+}
+
+.write5:active{
+
+    /* transform: scale(2,6); */
+    /*yüzde ile verilen scale daha güzel bir izlenim verir*/
+    transform: scale(95%);
+}
+
+.translate{
+     
+    background-color: gold;
+    color: coral;
+    font-weight: 900;
+    width: 100px;
+    height: 50px;
+    margin: 10px;
+    /* transition: color 1s, transform 2s; */
+    /* transition: all 1s; */
+}
+
+.x:hover{
+    transition: transform 1s;
+}
+.x:hover{
+
+    transform: translateX(50px) scale(50%) rotate(180deg);
+    background-color: greenyellow;
+
+
+}
+
+.y:active{
+
+    transform: translateY(50px);
+    background-color: aqua;
+
+}
+
+.xy:active{
+
+
+    transform: translate(20px,30px);
+    background-color: fuchsia;
+
+}
+
+
+.btn-div{
+
+    text-align: center;
+
+}
+.btn{
+    padding: 1rem;
+    width: 7rem;
+    background-color: aqua;
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    transition: all 1s;
+}
+
+.btn:hover{
+    background-color: coral;
+    color: red;
+}
+
+.btn:active{
+
+    /*basma efekti nasıl verilir*/
+    transform: scale(95%);
+}
+
