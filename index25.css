@@ -1,0 +1,105 @@
+*{
+
+    font-size: 1.2rem;
+    text-align: center;
+    /*browserdan dolayı divin sağ ve sol tarafında hafif bir boşluk var bunu gidermek için margin:0 yaparsak o boşluk gider*/
+    /* margin: 0;*/
+} 
+
+.container{
+    background-color: fuchsia;
+    display: flex; /*bunu verdikten sonra akış aşağı yönden yan yana dizilmeye gitti. flex-direction default değeri rowdur*/
+    flex-direction: row; /*row-reverse,column-reverse,column,row değerlerini alabilir flex direction*/
+    border: 2px solid red;
+    flex-wrap: wrap; /*ekran küçüldüğünde aşağı kaymalar düşsün diye wrap özelliğini açtık*/
+    justify-content:center ; /*elemanları ortalar.space-around,space-evenly,space-between veya center */
+    gap: 20px 20px;/*margin özelliği kapatıldığında alttan ve üstten kutuların yapışık olduğu görülüyor. alttan ve üstten açıklık özelliği vermek için margin veya biz padding te kullanabiliriz*/
+    /*gap satır ve sütunlar arasındaki boşluk olarak düşünülebilir*/
+    padding: 10px;
+}
+
+.container div{
+    width: 5rem;
+    background-color: gold;
+    height: 5rem;
+    /* margin: 1rem; */
+  
+}
+
+/*divin dışına taşmaları önlemek için ne yapmalıyız? overflow:auto yaparsak taşmaları önleyebiliriz!*/
+
+.container1{
+
+    display: flex;
+    height: 20rem;
+    background-color: aqua;
+    gap: 10px 20px; /*satırlar arası boşluk, sütunlar arası boşluk*/
+    padding: 10px;/*aşağıdan padding verince yukarıdan boşluk verdirtemedik*/
+    /* flex-wrap: wrap; */ /*default değeri nowraptir*/
+    justify-content: center;/*bu yatay hizalama için kullanılır*/
+    align-items: center;/*dikey hizalama için de bu kullanılır*//*flex-start dersek başa götürüp sıralar,flex-end aşağıda sıralar,stretch özelliği de uzatır. eğer biz stretch kullanmak istiyorsak height özelliğini kapatmamız gerekir*/
+}
+
+.container1 div{
+    height: 5rem;
+    width: 5rem;
+    background-color: coral;
+    /* padding: 40px; */
+}
+
+/*flex-box ile biz şunu yapıyoruz: bazı itemler 1 büyürken işte filan item 2 büyüsün demek için flex-box kullanırız>>flex-shrink ile bunun tersini yaparız yani işte bir şey 1 küçülürken diğeri 2 küçülsün demektir*/
+
+.container2{
+
+
+    background-color: violet;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.container2 div{
+    background-color: chartreuse;
+    width: 5rem;
+    flex-grow: 1; /*büyütme küçültme esnasında hepsi 1 büyür*/
+}
+
+div.grow2{
+    flex-grow: 5; /*diğerleri 1 büyürken bu 5 kat büyür*/
+}
+
+.container3{
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 1rem;
+    padding: 1rem;
+    
+}
+
+.container3 div{
+    background-color: khaki;
+    width: 5rem;
+}
+
+div.grow4{
+
+    width: 40%;
+}
+
+div.grow5{
+
+    width: 60%;
+}
+
+/*soru:her birinin eşit olarak gözükmesini istersek bunu 100/4 yaparız yani her birinin width değerine yüzde 25 veriririz*/
+/*göreceli olanlar:vw(ekranındır burada parenta bakılmaz! yani görülebilir alanın(tarayıcıda)) ile yüzde(parentın yüzdesidir)*/
+
+
+
+
+
+
