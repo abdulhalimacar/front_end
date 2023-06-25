@@ -1,0 +1,156 @@
+@import "theme.css";
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+
+    font-family:var(--ff-dyna);
+    background-color: rgb(107, 107, 229);
+    /*her taraftan margin vermek için body nin içerisine margin verebiliriz. bu sağdan soldan aşağıdan yukarıdan 1remlik margin verir aşağıdaki şey*/
+    margin: 1rem;
+}
+
+h1{
+    /*h1 block element olduğu için bu haliyle tüm satırı kaplar ama biz bunu width ile sınırlayabiliriz*/
+    background-color: rgb(153, 61, 61);
+    width: 20rem;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 30px; /*yüzde 50 verirsek tam yuvarlark olur kenarlar */
+    text-align: center;
+    /*şimdi biz bu media queries yazısını nasıl ortalayabiliriz? bunu marginle halledebiliriz aslında*/
+    margin: 2rem auto;/*y eksenine auto verdik(yani sağdan ve soldan ortalamış olduk) ve yukarıdan-aşağıdan da 2rem verdik. biz 2rem yerine sıfırda verebilirdik*/
+    /*yazılarımızı daha da kalınlaştırmak için font-weigh kullanılabilir*/
+    font-weight: 1000;
+
+}
+
+.header{
+    background-color: green;
+    color: white;
+    font-size: 1.9rem;
+    width: 100%;
+    border: 1px solid white;
+    padding: 5px;
+    text-align: center;
+    margin: 0 auto;
+    /*wenn diye başlayan yazı ile aşağının arasını açmak için margin-bottom uygula!*/
+    margin-bottom: 1rem;
+}
+
+.navbar{
+    display: flex;
+    justify-content: flex-start;/*bu default değerdir*/
+    background-color:darkblue;
+}
+
+.navbar a{ /*navbar içerisindeki a elementlerini seçtik*/
+
+    text-decoration: none;
+    color: white;
+    padding: 1rem;/*her yönden(sağdan,soldan,aşağıdan,yukarıdan padding verdik)
+    padding:1rem 1.5rem yapsaydık bu şu manaya gelirdi:yukarıdan ve aşağından 1rem padding(boşluk) ver,ve sağdan-soldan 1.5rem padding ver demektir bu*/
+
+
+
+}
+
+.navbar a:hover{
+
+    background-color: gray;/*üzerine geldiğimizde renk griye dönüyor*/
+    transition: all 0.5s; /*all demek hepsini gözlemle*/
+    color: red;
+    font-weight: 700;/*hovera basınca daha belirgin oluyor harfler*/
+
+}
+
+.row{
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    text-align: center;
+    /*hem text-align hem de justfiy content center yaptık*/
+     justify-content: center/*space-around*/;/*display flex içerisindeki tüm yazıları ortalayalım*/
+     
+    
+   
+}
+.col{
+    /*padding yapmadan önce yazılar birbirine girmeye yakın vaziyettedir bunu padding vererek giderebiliriz*/
+    padding: 1rem;
+    /* overflow: auto; */
+
+}
+.fs{
+    background-color: rgb(221, 200, 200);
+    width: 35%;
+
+}
+
+.aws{
+    background-color: gray;
+    width: 20%;
+
+}
+
+.data{
+
+    background-color: rgb(130, 99, 99);
+    width: 30%;
+
+}
+
+.cms{
+
+    background-color: rgb(97, 63, 63);
+    width: 30%;
+   
+}
+
+@media screen and (min-width:600px) and (max-width:992px) {
+    
+    body{
+        color: white;
+        background-color: coral;
+    }
+
+    .col{
+        width: 50%;
+        margin: 0.7rem 0;
+    }
+}
+
+@media screen and (min-width:0px) and (max-width:600px) {
+    
+    body{
+        background-color: purple;
+        color: wheat;
+    }
+
+    .navbar{
+
+        flex-direction: column;
+        align-items: center;/*flex direction column ise bunları ortalamayı biz align items ile yapıyoruz*/
+        text-align: center;
+    }
+
+    .header{
+        display: none;
+        
+    }
+
+    .col{
+
+        width: 100%;
+        /* margin-bottom: 1rem; */
+        margin: 1 rem auto;
+        margin-bottom: 1rem;
+        justify-content: center;
+        text-align: center;
+    }
+}
